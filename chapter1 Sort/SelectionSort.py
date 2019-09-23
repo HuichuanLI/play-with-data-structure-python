@@ -1,3 +1,7 @@
+from SortTestHelper import RandomArray
+import time
+
+
 def selectionSort(alist):
     for i in range(len(alist)):
         minposition = i
@@ -9,7 +13,12 @@ def selectionSort(alist):
 
 
 if __name__ == "__main__":
-    a = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-    a = selectionSort(a)
-    for w in a:
-        print(w)
+    time_start = time.time()
+
+    nums = RandomArray()
+    nums = selectionSort(nums)
+    time_end = time.time()
+    print('totally cost', time_end - time_start)
+
+    # for w in nums:
+    #     print(w)
