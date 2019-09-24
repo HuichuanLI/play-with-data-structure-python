@@ -4,12 +4,14 @@ import time
 
 
 def BubbleSort(alist):
+    flag = False
     for i in range(0, len(alist)):
         for j in range(len(alist) - 1, i, -1):
             if alist[j] < alist[j - 1]:
                 alist[j], alist[j - 1] = alist[j - 1], alist[j]
-            else:
-                break
+                flag = True
+        if not flag:
+            break
     return alist
 
 
