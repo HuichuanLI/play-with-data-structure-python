@@ -1,18 +1,22 @@
 from SortTestHelper import RandomArray, NearlyOrderArray
 from SelectionSort import selectionSort
-from InsertionSort import insertionSort
+from InsertionSort import insertionSort, insertionSortRange
 import time
 
 
 #
-def __mergeSort(alist, left, right):
-    if left >= right:
-        return
+def __mergeSortOptismation(alist, left, right):
+    if right - left <= 15:
+        return insertionSortRange(alist, right, left)
     # 注意 left + right 可能比较大
     mid = int((left + right) / 2)
-    __mergeSort(alist, left, mid)
-    __mergeSort(alist, mid + 1, right)
-    return __merge(alist, left, mid, right)
+    __mergeSortOptismation(alist, left, mid)
+    __mergeSortOptismation(alist, mid + 1, right)
+    # 会提高算法，当我们比较alist[mid] > alist[mid+1]
+    if alist[mid] > alist[mid + 1]:
+        return __merge(alist, left, mid, right)
+    else:
+        return alist
 
 
 def __merge(alist, left, mid, right):
@@ -39,7 +43,7 @@ def __merge(alist, left, mid, right):
 
 
 def MergeSort(alist):
-    alist = __mergeSort(alist, 0, len(alist) - 1)
+    alist = __mergeSortOptismation(alist, 0, len(alist) - 1)
     return alist
 
 

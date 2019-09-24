@@ -13,6 +13,18 @@ def insertionSort(alist):
     return alist
 
 
+def insertionSortRange(alist, left, right):
+    for i in range(left + 1, right):
+        currentvalue = alist[i]
+        for j in range(i, left - 1, -1):
+            if alist[j - 1] > currentvalue:
+                alist[j] = alist[j - 1]
+            else:
+                break
+        alist[j] = currentvalue
+    return alist
+
+
 def insertionSortUpdate(alist):
     for i in range(1, len(alist)):
         currentvalue = alist[i]
