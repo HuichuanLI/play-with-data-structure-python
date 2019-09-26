@@ -14,7 +14,7 @@ def insertionSort(alist):
 
 
 def insertionSortRange(alist, left, right):
-    for i in range(left + 1, right):
+    for i in range(left + 1, right + 1):
         currentvalue = alist[i]
         for j in range(i, left - 1, -1):
             if alist[j - 1] > currentvalue:
