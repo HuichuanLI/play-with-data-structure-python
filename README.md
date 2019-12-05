@@ -12,3 +12,6 @@ Please feel free to contact me if you have any questions with this repo:)
 | 1-5 归并排序优化 - Merge Sort Optimastion |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/MergeSortOptimastion.py)|
 | 1-6 快速排序 - Quick Sort |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/QuickSort.py)|
 | 1-7 快速排序优化 - Quick Sort Optimastion |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/QuickSortOptimsation.py)|
+| ** 第二章 递归基础 **  | python |
+| :---  |  :--- |
+| 1-1 递归斐波那契 - Fib list |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
