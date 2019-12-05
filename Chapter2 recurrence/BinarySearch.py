@@ -1,4 +1,11 @@
-data = [1, 7, 17, 18, 27, 29, 30, 35, 39, 41, 63, 66, 67, 78, 82, 91, 92]
+import random
+
+
+def random_list(start, end, length):
+    data_list = []
+    for i in range(length):
+        data_list.append(random.randint(start, end))
+    return data_list
 
 
 def search(data_list, target):
@@ -18,5 +25,24 @@ def search(data_list, target):
     return -1
 
 
+def search2(data_list, left, right, target):
+    if left > right:
+        print("找不到")
+        return -1
+    mid = int((left + right) / 2)
+    if data_list[mid] == target:
+        print("查找到数据，所在数据:{}".format(mid))
+        return mid
+    elif data_list[mid] > target:
+        return search2(data_list, left, mid - 1, target)
+    else:
+        return search2(data_list, mid + 1, right, target)
+
+
 if __name__ == "__main__":
-    search(data, 78)
+    data = random_list(1, 100, 10)
+    data = sorted(data)
+    target = random.randint(0, len(data) - 1)
+
+    search(data, data[target])
+    search2(data, 0, len(data) - 1, data[target])
