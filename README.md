@@ -13,9 +13,8 @@ Please feel free to contact me if you have any questions with this repo:)
 | 1-6 快速排序 - Quick Sort |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/QuickSort.py)|
 | 1-7 快速排序优化 - Quick Sort Optimastion |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/QuickSortOptimsation.py)|
 | ** 第二章 递归基础 **  | python |
-| :---  |  :--- |
-| 2-1 递归斐波那契 - Fib list |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
-| 2-2 二分查找 - Binary Search |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
-| 2-3 八皇后问题 - Eight Queen |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
-| 2-4 汉诺塔 - hanoi Tower |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
-| 2-5 全排列 - All ranges |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
+| 2-1 递归斐波那契 - Fib list |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/Fibonnaci.py)|
+| 2-2 二分查找 - Binary Search |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/BinarySearch.py)|
+| 2-3 八皇后问题 - Eight Queen |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/eight_queen.py)|
+| 2-4 汉诺塔 - hanoi Tower |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/Hannoi.py)|
+| 2-5 全排列 - All ranges |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/all_range.py)|
