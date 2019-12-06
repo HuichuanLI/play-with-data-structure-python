@@ -18,3 +18,4 @@ Please feel free to contact me if you have any questions with this repo:)
 | 2-2 二分查找 - Fib list |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
 | 2-3 八皇后问题 - Eight Queen |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
 | 2-4 汉诺塔 - hanoi Tower |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
+| 2-5 全排列 - All ranges |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
