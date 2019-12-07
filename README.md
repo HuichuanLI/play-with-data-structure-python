@@ -18,3 +18,11 @@ Please feel free to contact me if you have any questions with this repo:)
 | 2-3 八皇后问题 - Eight Queen |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/eight_queen.py)|
 | 2-4 汉诺塔 - hanoi Tower |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/Hannoi.py)|
 | 2-5 全排列 - All ranges |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/all_range.py)|
+| ** 第二章 动规基础 **  | python |
+| 2-1 0-1背包问题回溯解法 - Bag |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/Fibonnaci.py)|
+| 2-2 0-1背包问题记忆化搜索 - Bag |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/BinarySearch.py)|
+| 2-3 0-1背包问题动规 - Bag |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/BinarySearch.py)|
+| 2-4 数字金字塔回溯解法 - Bag |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/Fibonnaci.py)|
+| 2-5 数字金字塔记忆化搜索 - Bag |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/BinarySearch.py)|
+| 2-6 数字金字塔动规 - Bag |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/BinarySearch.py)|
+
