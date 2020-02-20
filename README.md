@@ -28,8 +28,8 @@ Please feel free to contact me if you have any questions with this repo:)
 | ** 第四章 Array **  | python |
 | 4-1 动态数组实现 - Array |[python](./Chapter4%20Array/Array.py)|
 | ** 第五章 栈和队列 **  | python |
-| 5-1 动态数组实现栈 - StackArray |[python](./Chapter5%Stack_Queue/ArrayStack.py)|
-| 5-2 leetcode22 - Stack |[python](./Chapter5%Stack_Queue/Leetcode22.py)|
+| 5-1 动态数组实现栈 - StackArray |[python](./Chapter5_Stack_Queue/ArrayStack.py)|
+| 5-2 leetcode22 - Stack |[python](./Chapter5_Stack_Queue/Leetcode22.py)|
 
 
 
