@@ -18,7 +18,7 @@ class ArrayStack(StackBase):
         return self._array.get_capacity()
 
     def __str__(self):
-        return str('<chapter_03_Stack_Queue.stack.ArrayStack> : {}'.format(self._array))
+        return str('<chapter_05_Stack_Queue.stack.ArrayStack> : {}'.format(self._array))
 
     def __repr__(self):
         return self.__str__()

@@ -30,6 +30,9 @@ Please feel free to contact me if you have any questions with this repo:)
 | ** 第五章 栈和队列 **  | python |
 | 5-1 动态数组实现栈 - StackArray |[python](./Chapter5_Stack_Queue/ArrayStack.py)|
 | 5-2 leetcode22 - Stack |[python](./Chapter5_Stack_Queue/Leetcode22.py)|
+| 5-3 动态数组实现队列 - Queue |[python](./Chapter5_Stack_Queue/ArrayQueue.py)|
+| 5-4 动态数组实现循环队列 - LoopQueue |[python](./Chapter5_Stack_Queue/LoopQueue.py)|
+| 5-5 循环队列vs队列 - Queue |[python](./Chapter5_Stack_Queue/Comparison.py)|
 
 
 
