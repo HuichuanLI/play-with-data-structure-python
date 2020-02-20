@@ -27,6 +27,9 @@ Please feel free to contact me if you have any questions with this repo:)
 | 3-6 数字金字塔动规 - pyramid_dp |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter3%20Dynamic%20planning/pyramid_dp.py)|
 | ** 第四章 Array **  | python |
 | 4-1 动态数组实现 - Array |[python](./Chapter4%20Array/Array.py)|
+| ** 第五章 栈和队列 **  | python |
+| 5-1 动态数组实现栈 - StackArray |[python](./Chapter5%Stack_Queue/ArrayStack.py)|
+| 5-2 leetcode22 - Stack |[python](./Chapter5%Stack_Queue/Leetcode22.py)|
 
 
 
