@@ -25,4 +25,6 @@ Please feel free to contact me if you have any questions with this repo:)
 | 3-4 数字金字塔回溯解法 - pyramid_search |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter3%20Dynamic%20planning/num_pyramid.py)|
 | 3-5 数字金字塔记忆化搜索 - pyramid_memo |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter3%20Dynamic%20planning/pyramid_memo.py)|
 | 3-6 数字金字塔动规 - pyramid_dp |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter3%20Dynamic%20planning/pyramid_dp.py)|
+| ** 第四章 Array **  | python |
+| 4-1 动态数组实现 - Array |[python](./Chapter4 Array/Array.py)|
 
