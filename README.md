@@ -37,6 +37,8 @@ Please feel free to contact me if you have any questions with this repo:)
 | 6-1 链表实现 - LinkedList |[python](./Chapter6_LinkedList/LinkedList.py)|
 | 6-2 链表实现栈 - LinkedListStack |[python](./Chapter6_LinkedList/LinkedListStack.py)|
 | 6-3 链表实现栈vs数组栈 - LinkedListStack vs StackArray |[python](./Chapter6_LinkedList/Comparison.py)|
+| 6-4 链表实现队列 - LinkedListQueue |[python](./Chapter6_LinkedList/LinkedListQueue.py)|
+| 6-5 队列比较 - LinkedListQueue vs LoopQueue vs ArrayQueue |[python](./Chapter6_LinkedList/Comparison_queue.py)|
 
 
 
