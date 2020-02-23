@@ -44,7 +44,8 @@ Please feel free to contact me if you have any questions with this repo:)
 | ** 第9章 SET和MAP **  | python |
 | 9-1 基于二分搜索树的SET - BSTSet |[python](./Chapter9_SET_MAP/BSTSet.py)|
 | 9-2 基于链表的SET - LinkedListSet |[python](./Chapter9_SET_MAP/LinkedListSet.py)|
-
+| 9-3 基于二分搜索树的Map - BSTMap |[python](./Chapter9_SET_MAP/BSTMap.py)|
+| 9-4 基于链表的Map - LinkedListMap |[python](./Chapter9_SET_MAP/LinkedListMap.py)|
 
 
 
