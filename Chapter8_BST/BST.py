@@ -125,7 +125,7 @@ class BST:
     def minimum(self):
         if self.is_empty():
             raise ValueError('BST is empty!')
-        self._minimum(self._root)
+        return self._minimum(self._root)
 
     def _minimum(self, node):
         if not node.left:
@@ -135,12 +135,83 @@ class BST:
     def maximum(self):
         if self.is_empty():
             raise ValueError('BST is empty!')
-        self._maximum(self._root)
+        return self._maximum(self._root)
 
     def _maximum(self, node):
         if not node.right:
             return node
         return self._maximum(node.right)
+
+    def remove_min(self):
+        ret = self.minimum()
+        # 用单链表来验证
+        self._root = self._remove_min(self._root)
+        return ret
+
+    # 删除掉以node为根的BST中的最小节点
+    # 返回删除节点后新的BST的根
+    def _remove_min(self, node):
+        # 递归终止
+        if not node.left:
+            rightNode = node.right
+            node.right = None
+            self._size -= 1
+            return rightNode
+        node.left = self._remove_min(node.left)
+        return node
+
+    def remove_max(self):
+        ret = self.maximum()
+        # 用单链表来验证
+        self._root = self._remove_max(self._root)
+        return ret
+
+        # 删除掉以node为根的BST中的最大节点
+        # 返回删除节点后新的BST的根
+
+    def _remove_max(self, node):
+        # 递归终止
+        if not node.right:
+            left_node = node.left
+            node.left = None
+            self._size -= 1
+            return left_node
+        node.right = self._remove_max(node.right)
+        return node
+
+    def remove(self, e):
+        self._root = self._remove(self._root, e)
+
+    # 删除以node为根的BST中值为e的节点，递归算法
+    # 返回删除节点后的新的BST的根
+    def _remove(self, node, e):
+        if not node:
+            return None
+        if node.e < e:
+            node.right = self._remove(node.right, e)
+            return node
+        elif node.e > e:
+            node.left = self._remove(node.left, e)
+            return node
+        else:
+            if not node.left:
+                rightnode = node.right
+                node.right = None
+                self._size -= 1
+                return rightnode
+            if not node.right:
+                leftnode = node.left
+                node.left = None
+                self._size -= 1
+                return leftnode
+            # 如果左右子树均不为空
+            # 找到比待删除节点大的最小节点，即待删除节点右子树的最小节点
+            # 用这个节点顶替待删除节点的位置
+            successeur = self.minimum(node.right)
+            successeur.right = self.remove_min(node.right)
+            successeur.left = node.left
+            node.left = node.right = None
+            return successeur
 
     def _generate_depth_string(self, depth):
         res = ''
@@ -166,13 +237,21 @@ class BST:
 
 
 if __name__ == '__main__':
+    # bst = BST()
+    # nums = [5, 3, 6, 8, 4, 2, 2]
+    # for num in nums:
+    #     bst.add(num)
+    # bst.pre_order()
+    # print(bst)
+    #
+    # # bst.pre_order_NR()
+    #
+    # bst.level_order()
     bst = BST()
-    nums = [5, 3, 6, 8, 4, 2, 2]
-    for num in nums:
-        bst.add(num)
-    bst.pre_order()
-    print(bst)
+    from random import randint
 
-    # bst.pre_order_NR()
+    for i in range(10000):
+        bst.add(randint(0, 10000))
 
-    bst.level_order()
+    while not bst.is_empty():
+        print(bst.remove_max().e)
