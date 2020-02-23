@@ -33,13 +33,14 @@ Please feel free to contact me if you have any questions with this repo:)
 | 5-3 动态数组实现队列 - Queue |[python](./Chapter5_Stack_Queue/ArrayQueue.py)|
 | 5-4 动态数组实现循环队列 - LoopQueue |[python](./Chapter5_Stack_Queue/LoopQueue.py)|
 | 5-5 循环队列vs队列 - Queue |[python](./Chapter5_Stack_Queue/Comparison.py)|
-｜** 第6章 链表 **  | python |
+|** 第6章 链表 **  | python |
 | 6-1 链表实现 - LinkedList |[python](./Chapter6_LinkedList/LinkedList.py)|
 | 6-2 链表实现栈 - LinkedListStack |[python](./Chapter6_LinkedList/LinkedListStack.py)|
 | 6-3 链表实现栈vs数组栈 - LinkedListStack vs StackArray |[python](./Chapter6_LinkedList/Comparison.py)|
 | 6-4 链表实现队列 - LinkedListQueue |[python](./Chapter6_LinkedList/LinkedListQueue.py)|
 | 6-5 队列比较 - LinkedListQueue vs LoopQueue vs ArrayQueue |[python](./Chapter6_LinkedList/Comparison_queue.py)|
-
+| ** 第8章 二分搜索树 BST **  | python |
+| 8-1 二分搜索树 - BST |[python](./Chapter8_BST/BST.py)|
 
 
 
