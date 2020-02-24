@@ -3,8 +3,9 @@
 I will put my solutions all data structure and algo in python.
 Please feel free to contact me if you have any questions with this repo:)
 
-| ** 第一章 排序基础 **  | python |
+| ** 数据结构与算法 **  | python |
 | :---  |  :--- |
+| ** 第一章 排序基础 **  | python |
 | 1-1 选择排序 - Selection Sort |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/SelectionSort.py)|
 | 1-2 插入排序 - Insertion Sort |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/InsertionSort.py)|
 | 1-3 冒泡排序 - Bubble Sort |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/BubbleSort.py)|
@@ -46,6 +47,8 @@ Please feel free to contact me if you have any questions with this repo:)
 | 9-2 基于链表的SET - LinkedListSet |[python](./Chapter9_SET_MAP/LinkedListSet.py)|
 | 9-3 基于二分搜索树的Map - BSTMap |[python](./Chapter9_SET_MAP/BSTMap.py)|
 | 9-4 基于链表的Map - LinkedListMap |[python](./Chapter9_SET_MAP/LinkedListMap.py)|
-
+| ** 第十章 优先队列和堆 **  | python |
+| 10-1 基于数组的最大堆 - MaxHeap |[python](./Chapter10_MaxHeap/MaxHeap.py)|
+| 10-2 优先队列 - PriorityQueue |[python](./Chapter10_MaxHeap/PriorityQueue.py)|
 
 
