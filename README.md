@@ -55,7 +55,11 @@ Please feel free to contact me if you have any questions with this repo:)
 | ** 第十二章 字典树- Trie **  | python |
 | 12-1 字典书实现 - Trie |[python](./Chapter12_Trie/Trie.py)|
 | 12-2 BSTSet vs Trie |[python](./Chapter12_Trie/comparision.py)|
-
+| ** 第十三章 并查集 - Union Find **  | python |
+| 13-1 并查集 - Union Find(Quick Find) |[python](./Chapter13_Union_FInd/UnionFind1.py)|
+| 13-2 并查集  - Union Find(Quick Union) |[python](./Chapter13_Union_FInd/UnionFind2.py)|
+| 13-3 并查集 - (基于size的优化) |[python](./Chapter13_Union_FInd/UnionFind3.py)|
+| 13-4 并查集 - (基于rank的优化) |[python](./Chapter13_Union_FInd/UnionFind4.py)|
 
 
 
