@@ -52,6 +52,11 @@ Please feel free to contact me if you have any questions with this repo:)
 | 10-2 优先队列 - PriorityQueue |[python](./Chapter10_MaxHeap/PriorityQueue.py)|
 | ** 第十一章 线段树- Segment Tree **  | python |
 | 11-1 线段树 - SegmentTree |[python](./Chapter11_SegmentTree/SegmentTree.py)|
+| ** 第十二章 字典树- Trie **  | python |
+| 12-1 字典书实现 - Trie |[python](./Chapter12_Trie/Trie.py)|
+| 12-2 BSTSet vs Trie |[python](./Chapter12_Trie/comparision.py)|
+
+
 
 
 
