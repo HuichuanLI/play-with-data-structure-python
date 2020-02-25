@@ -60,6 +60,9 @@ Please feel free to contact me if you have any questions with this repo:)
 | 13-2 并查集  - Union Find(Quick Union) |[python](./Chapter13_Union_FInd/UnionFind2.py)|
 | 13-3 并查集 - (基于size的优化) |[python](./Chapter13_Union_FInd/UnionFind3.py)|
 | 13-4 并查集 - (基于rank的优化) |[python](./Chapter13_Union_FInd/UnionFind4.py)|
+| 13-5 并查集 - (路径压缩) |[python](./Chapter13_Union_FInd/UnionFind5.py)|
+| 13-6 并查集 - (路径压缩递归实现) |[python](./Chapter13_Union_FInd/UnionFind6.py)|
+
 
 
 
