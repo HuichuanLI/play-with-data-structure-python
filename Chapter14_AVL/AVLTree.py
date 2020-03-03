@@ -51,7 +51,57 @@ class AVLTree:
         node.height = 1 + max(self._get_height(node.left), self._get_height(node.right))
         banlance_factor = self._get_banlance_factor(node)
 
+        # 维护平衡性
+
+        # 左边高 LL
+        if banlance_factor > 1 and self._get_banlance_factor(node.left) >= 0:
+            return self._right_rotate(node)
+
+        if banlance_factor < -1 and self._get_banlance_factor(node.right) <= 0:
+            return self._left_rotate(node)
+
         return node
+
+    def _right_rotate(self, node):
+        """
+             对节点y进行向右旋转操作，返回旋转后的新的根节点x
+                     y                                 x
+                    / \                               / \
+                   x   T4      向右旋转 (y)           z    y
+                  / \        -------------->       / \   / \
+                 z   T3                           T1 T2 T3  T4
+                / \
+               T1  T2
+        """
+        x = y.left
+        T3 = x.right
+        # 右旋转
+        x.right = y
+        y.left = T3
+        # 更新height
+        y.height = max(self._get_height(y.left), self._get_height(y.right)) + 1
+        x.height = max(self._get_height(x.left), self._get_height(x.right)) + 1
+        return x
+
+    def _left_rotate(self, y):
+        """
+        对节点y进行向左旋转操作，返回旋转后的新的根节点x
+             y                                 x
+            / \                               / \
+           T1  x      向左旋转 (y)            y    z
+              / \     -------------->      / \   / \
+             T2  z                        T1 T2 T3  T4
+                / \
+               T1 T2
+        """
+        x = y.right
+        T2 = x.left
+        x.left = y
+        y.right = T2
+        # 更新height
+        y.height = max(self._get_height(y.left), self._get_height(y.right)) + 1
+        x.height = max(self._get_height(x.left), self._get_height(x.right)) + 1
+        return x
 
     def is_bst(self):
         keys = []
