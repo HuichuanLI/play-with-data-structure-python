@@ -83,6 +83,11 @@ Please feel free to contact me if you have any questions with this repo:)
 | 13-6 并查集 - (路径压缩递归实现) |[python](./Chapter13_Union_FInd/UnionFind6.py)|
 | ** 第十四章 AVL tree  **  | python |
 | 14-1 avl |[python](./Chapter14_AVL/AVLTree.py)|
+| ** 第十五章 红黑树 RedBlack tree  **  | python |
+| 15-1 RedBlackTree实现 |[python](./Chapter15_RedBlackTree/RBTree.py)|
+| 15-2 RedBlackTree vsAVL vs BST 比较 |[python](./Chapter15_RedBlackTree/main.py)|
+| ** 第十六章 哈希表 Hashtable   **  | python |
+| 16-1 Hashtable 实现 |[python](./Chapter16_HashTable/HashTable.py)|
 
 
 
