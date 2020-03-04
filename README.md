@@ -3,6 +3,25 @@
 I will put my solutions all data structure and algo in python.
 Please feel free to contact me if you have any questions with this repo:)
 
+
+### Included data structures
+
+    Array 数组
+    Stack 栈
+    Queue 队列
+    Linked List 链表
+    Binary Search Tree 二分搜索树
+    Heap 堆
+    
+    Segment Tree 线段树
+    Trie
+    Union Find 并查集
+    
+    AVL
+    Red Black Tree 红黑树
+    Hash Table 哈希表
+
+
 | ** 数据结构与算法 **  | python |
 | :---  |  :--- |
 | ** 第一章 排序基础 **  | python |
@@ -62,7 +81,8 @@ Please feel free to contact me if you have any questions with this repo:)
 | 13-4 并查集 - (基于rank的优化) |[python](./Chapter13_Union_FInd/UnionFind4.py)|
 | 13-5 并查集 - (路径压缩) |[python](./Chapter13_Union_FInd/UnionFind5.py)|
 | 13-6 并查集 - (路径压缩递归实现) |[python](./Chapter13_Union_FInd/UnionFind6.py)|
-
+| ** 第十四章 AVL tree  **  | python |
+| 14-1 avl |[python](./Chapter14_AVL/AVLTree.py)|
 
 
 
