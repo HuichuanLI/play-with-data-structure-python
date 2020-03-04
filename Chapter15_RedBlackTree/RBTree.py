@@ -1,5 +1,5 @@
 RED = True
-BLACK = Falsel
+BLACK = False
 
 
 class RBTree:
@@ -122,6 +122,61 @@ class RBTree:
         node.color = RED
         node.left.color = BLACK
         node.right.color = BLACK
+
+    def _minimum(self, node):
+        if not node.left:
+            return node
+        return self._minimum(node.left)
+
+    # 删除掉以node为根的BST中的最小节点
+    # 返回删除节点后新的BST的根
+    def _remove_min(self, node):
+        # 递归终止
+        if not node.left:
+            right_node = node.right
+            node.right = None
+            self._size -= 1
+            return right_node
+        node.left = self._remove_min(node.left)
+        return node
+
+    def remove(self, key):
+        node = self._get_node(self._root, key)
+        if not node:
+            self._root = self._remove(self._root, key)
+            return node.value
+
+    # 删除以node为根的BST中值为e的节点，递归算法
+    # 返回删除节点后的新的BST的根
+    def _remove(self, node, key):
+        # 递归终止
+        if not node:
+            return
+        # 递归条件
+        if node.key > key:
+            node.left = self._remove(node.left, key)
+            return node
+        elif node.key < key:
+            node.right = self._remove(node.right, key)
+        else:  # node.key == key
+            if not node.left:
+                right_node = node.right
+                node.right = None
+                self._size -= 1
+                return right_node
+            if not node.right:
+                left_node = node.left
+                node.left = None
+                self._size -= 1
+                return left_node
+            # 如果左右子树均不为空
+            # 找到比待删除节点大的最小节点，即待删除节点右子树的最小节点
+            # 用这个节点顶替待删除节点的位置
+            successor = self._minimum(node.right)
+            successor.right = self._remove_min(node.right)
+            successor.left = node.left
+            node.left = node.right = None
+            return successor
 
     def _generate_RBTree_string(self, node, depth, res):
         if not node:

@@ -1,5 +1,5 @@
-from base import MapBase
-from AVLTree import AVLTree
+from .base import MapBase
+from .AVLTree import AVLTree
 
 
 class AVLMap(MapBase):

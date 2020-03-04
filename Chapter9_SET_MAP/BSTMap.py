@@ -1,4 +1,4 @@
-from base import MapBase
+from .base import MapBase
 
 
 class BSTMap(MapBase):
