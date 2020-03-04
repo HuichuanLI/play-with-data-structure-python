@@ -47,10 +47,12 @@ if __name__ == '__main__':
     print('Total words: ', len(words))
     print('Unique words: ', avlMap.get_size())
     print('Contains word "they": ', avlMap.contains('they'))
-    ## 耗时1.23秒左右
+    ## 耗时1.39秒左右
     print('Total time: {} seconds'.format(time() - start_time))
 
-    # bst_map.remove('they')
+    # avlMap.remove('they')
     print(avlMap.contains('they'))
-    avlMap.setter('they', 100)
-    print(avlMap.getter('they'))
+    # avlMap.setter('they', 100)
+    # print(avlMap.getter('they'))
+
+    print(avlMap._avl.is_banlanced())

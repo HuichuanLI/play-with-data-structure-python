@@ -56,13 +56,21 @@ class AVLTree:
         # 左边高 LL
         if banlance_factor > 1 and self._get_banlance_factor(node.left) >= 0:
             return self._right_rotate(node)
-
+        # 右边 RR
         if banlance_factor < -1 and self._get_banlance_factor(node.right) <= 0:
             return self._left_rotate(node)
 
+        # LR
+        if banlance_factor > 1 and self._get_banlance_factor(node.left) < 0:
+            node.left = self._left_rotate(node.left)
+            return self._right_rotate(node)
+        # RL
+        if banlance_factor < -1 and self._get_banlance_factor(node.right) > 0:
+            node.right = self._right_rotate(node.right)
+            return self._left_rotate(node)
         return node
 
-    def _right_rotate(self, node):
+    def _right_rotate(self, y):
         """
              对节点y进行向右旋转操作，返回旋转后的新的根节点x
                      y                                 x
@@ -191,25 +199,51 @@ class AVLTree:
         # 递归条件
         if node.key > key:
             node.left = self._remove(node.left, key)
-            return node
+            ret_node = node
         elif node.key < key:
             node.right = self._remove(node.right, key)
+            ret_node = node
         else:  # node.key == key
             if not node.left:
                 right_node = node.right
                 node.right = None
                 self._size -= 1
-                return right_node
-            if not node.right:
+                ret_node = right_node
+            elif not node.right:
                 left_node = node.left
                 node.left = None
                 self._size -= 1
-                return left_node
+                ret_node = left_node
             # 如果左右子树均不为空
             # 找到比待删除节点大的最小节点，即待删除节点右子树的最小节点
             # 用这个节点顶替待删除节点的位置
-            successor = self.minimum(node.right)
-            successor.right = self._remove_min(node.right)
-            successor.left = node.left
-            node.left = node.right = None
-            return successor
+            else:
+                successor = self._minimum(node.right)
+                successor.right = self._remove(node.right, successor.key)
+                successor.left = node.left
+                node.left = node.right = None
+                ret_node = successor
+
+        if not ret_node:
+            return
+            # 需要更新height
+        ret_node.height = 1 + max(
+            self._get_height(ret_node.left),
+            self._get_height(ret_node.right),
+        )
+        banlance_factor = self._get_banlance_factor(ret_node)
+        # 左边高 LL
+        if banlance_factor > 1 and self._get_banlance_factor(ret_node.left) >= 0:
+            return self._right_rotate(ret_node)
+        # 右边高 RR
+        if banlance_factor < -1 and self._get_banlance_factor(ret_node.right) <= 0:
+            return self._left_rotate(ret_node)
+        # LR
+        if banlance_factor > 1 and self._get_banlance_factor(ret_node.left) < 0:
+            ret_node.left = self._left_rotate(ret_node.left)
+            return self._right_rotate(ret_node)
+        # RL
+        if banlance_factor < -1 and self._get_banlance_factor(ret_node.right) > 0:
+            ret_node.right = self._right_rotate(ret_node.right)
+            return self._left_rotate(ret_node)
+        return ret_node
