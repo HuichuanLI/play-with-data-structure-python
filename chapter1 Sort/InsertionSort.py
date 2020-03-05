@@ -1,5 +1,5 @@
 from SortTestHelper import RandomArray, NearlyOrderArray
-from SelectionSort import selectionSort
+# from SelectionSort import selectionSort
 import time
 
 
@@ -10,6 +10,18 @@ def insertionSort(alist):
                 alist[j], alist[j - 1] = alist[j - 1], alist[j]
             else:
                 break
+    return alist
+
+
+def selectionSort(alist):
+    for i in range(len(alist) - 1):
+        cur_index = i
+
+        for j in range(i, len(alist)):
+            if alist[j] < alist[cur_index]:
+                cur_index = j
+        if cur_index != i:
+            alist[i], alist[cur_index] = alist[cur_index], alist[i]
     return alist
 
 
@@ -64,6 +76,7 @@ if __name__ == "__main__":
 
     nums = NearlyOrderArray(swap_times=100, number=10000)
     nums = selectionSort(nums)
+
     time_end = time.time()
     print('Selection totally cost', time_end - time_start)
 
