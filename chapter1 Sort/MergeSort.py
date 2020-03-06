@@ -9,7 +9,7 @@ def __mergeSort(alist, left, right):
     if left >= right:
         return
     # 注意 left + right 可能比较大
-    mid = int((left + right) / 2)
+    mid = left + int((right - left) / 2)
     __mergeSort(alist, left, mid)
     __mergeSort(alist, mid + 1, right)
     return __merge(alist, left, mid, right)

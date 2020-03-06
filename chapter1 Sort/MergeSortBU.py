@@ -3,10 +3,11 @@ import time
 from SortTestHelper import RandomArray, NearlyOrderArray
 
 
+# 自底向上的归并排序，是比自顶向下的归并排序要快的。
 def mergeSortBu(alist):
     sz = 1
     while sz <= len(alist):
-        for i in range(0, len(alist) - sz , 2 * sz):
+        for i in range(0, len(alist) - sz, 2 * sz):
             alist = __merge(alist, i, i + sz - 1, min(i + 2 * sz - 1, len(alist) - 1))
         sz = 2 * sz
     return alist
