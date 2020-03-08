@@ -63,17 +63,12 @@ class MaxHeap:
         while self._left_child(index) < self.size():
             right = self._right_child(index)
             left = self._left_child(index)
-            max = 0
-            max_index = 0
-            if right < self.size():
+            max =  self._data.get(left)
+            max_index = left
+            if right < self.size() and max < self._data.get(right):
                 right_chid = self._data.get(right)
                 max = right_chid
                 max_index = right
-            if left < self.size():
-                left_child = self._data.get(left)
-                if left_child > max:
-                    max = left_child
-                    max_index = left
             if max > self._data.get(index):
                 self._data.swap(max_index, index)
                 index = max_index

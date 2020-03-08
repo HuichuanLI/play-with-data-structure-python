@@ -87,7 +87,7 @@ class Array:
         for i in range(index, self._size - 1):
             self._data[i] = self._data[i + 1]
         self._size -= 1
-        if (self._size == len(self._data) // 4 and len(self._data) // 2 != 0):
+        if self._size == len(self._data) // 4 and len(self._data) // 2 != 0:
             self._resize(len(self._data) // 2)
 
         return ret
