@@ -40,6 +40,7 @@ Please feel free to contact me if you have any questions with this repo:)
 | 1-7 快速排序优化 - Quick Sort Optimastion |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/QuickSortOptimsation.py)|
 | 1-8 希尔排序 - Shell Sort|[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/ShellSort.py)|
 | 1-9 桶排序 - Bucket Sort|[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/BucketSort.py)|
+| 1-10 三路快速排序 - Bucket Sort|[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/chapter1%20Sort/BucketSort.py)|
 | ** 第二章 递归基础 **  | python |
 | 2-1 递归斐波那契 - Fib list |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/Fibonnaci.py)|
 | 2-2 二分查找 - Binary Search |[python](https://github.com/HuichuanLI/play-with-data-structure-python/blob/master/Chapter2%20recurrence/BinarySearch.py)|

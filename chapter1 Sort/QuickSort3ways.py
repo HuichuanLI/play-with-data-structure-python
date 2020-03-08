@@ -4,8 +4,9 @@ from SelectionSort import selectionSort
 from InsertionSort import insertionSort, insertionSortRange
 import time
 
+
 def quickSort3ways(nums):
-    return _quickSort3Ways(nums, 0, len(nums) - 1)
+    _quickSort3Ways(nums, 0, len(nums) - 1)
 
 
 def _quickSort3Ways(arr, left, right):
@@ -27,9 +28,9 @@ def _quickSort3Ways(arr, left, right):
             gt -= 1
         else:
             i += 1
+    arr[left], arr[lt] = arr[lt], arr[left]
     _quickSort3Ways(arr, left, lt - 1)
     _quickSort3Ways(arr, gt, right)
-    return arr
 
 
 if __name__ == "__main__":
@@ -41,7 +42,7 @@ if __name__ == "__main__":
     print('totally cost', time_end - time_start)
 
     a = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
-    a = quickSort3ways(a)
+    quickSort3ways(a)
     for w in a:
         print(w)
 
