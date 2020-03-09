@@ -70,7 +70,8 @@ Please feel free to contact me if you have any questions with this repo:)
 | 6-4 链表实现队列 - LinkedListQueue |[python](./Chapter6_LinkedList/LinkedListQueue.py)|
 | 6-5 队列比较 - LinkedListQueue vs LoopQueue vs ArrayQueue |[python](./Chapter6_LinkedList/Comparison_queue.py)|
 | ** 第8章 二分搜索树 BST **  | python |
-| 8-1 二分搜索树 - BST |[python](./Chapter8_BST/BST.py)|
+| 8-1 二分搜索法 - BinarySearch |[python](./Chapter8_BST/BinarySearch.py)|
+| 8-2 二分搜索树 - BST |[python](./Chapter8_BST/BST.py)|
 | ** 第9章 SET和MAP **  | python |
 | 9-1 基于二分搜索树的SET - BSTSet |[python](./Chapter9_SET_MAP/BSTSet.py)|
 | 9-2 基于链表的SET - LinkedListSet |[python](./Chapter9_SET_MAP/LinkedListSet.py)|
