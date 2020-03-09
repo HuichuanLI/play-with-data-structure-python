@@ -15,3 +15,7 @@
 
 ![集合比较](../photo/40.png)
 
+
+## indexHeap
+
+![集合比较](../photo/41.png)

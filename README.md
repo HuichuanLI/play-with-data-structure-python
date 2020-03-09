@@ -18,6 +18,7 @@ Please feel free to contact me if you have any questions with this repo:)
     Linked List 链表
     Binary Search Tree 二分搜索树
     Heap 堆
+    Index Heap 索引堆
     
     Segment Tree 线段树
     Trie
@@ -79,6 +80,7 @@ Please feel free to contact me if you have any questions with this repo:)
 | 10-1 基于数组的最大堆 - MaxHeap |[python](./Chapter10_MaxHeap/MaxHeap.py)|
 | 10-2 优先队列 - PriorityQueue |[python](./Chapter10_MaxHeap/PriorityQueue.py)|
 | 10-3 堆排序 - HeapSort |[python](./Chapter10_MaxHeap/HeapSort.py)|
+| 10-4 索引堆 - indexHeap |[python](./Chapter10_MaxHeap/IndexHeap.py)|
 | ** 第十一章 线段树- Segment Tree **  | python |
 | 11-1 线段树 - SegmentTree |[python](./Chapter11_SegmentTree/SegmentTree.py)|
 | ** 第十二章 字典树- Trie **  | python |
