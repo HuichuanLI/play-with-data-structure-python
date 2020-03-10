@@ -6,8 +6,8 @@ class SparseGraph:
         self.graph = [[] for i in range(n)]
 
     def __str__(self):
-        for line in self.martix:
-            print(str(line))
+        for index,line in enumerate(self.graph):
+            print(index,str(line))
         return ''  # __str__必须要返回字符串，否则报错。。。
 
     def V(self):
