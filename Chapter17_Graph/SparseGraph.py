@@ -6,8 +6,8 @@ class SparseGraph:
         self.graph = [[] for i in range(n)]
 
     def __str__(self):
-        for index,line in enumerate(self.graph):
-            print(index,str(line))
+        for index, line in enumerate(self.graph):
+            print(index, str(line))
         return ''  # __str__必须要返回字符串，否则报错。。。
 
     def V(self):
@@ -35,3 +35,9 @@ class SparseGraph:
             return False
         else:
             raise Exception('Vertex not in the graph')
+
+    def __iter__(self):
+        return iter(range(self.m))
+
+    def __getitem__(self, item):
+        return iter(self.graph[item])

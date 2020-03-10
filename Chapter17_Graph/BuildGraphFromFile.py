@@ -18,8 +18,8 @@ def BuildGraphFromFile(aGraph, filePath):
 # g1 = DenseGraph(13)  # 必须填入正确的结点个数。。。我真的觉得邻接矩阵不好用
 # BuildGraphFromFile(g1, 'testG1.txt')
 # print(g1)
-
-
-g1 = SparseGraph(13)  # 必须填入正确的结点个数。。。我真的觉得邻接矩阵不好用
-BuildGraphFromFile(g1, 'testG1.txt')
-print(g1)
+#
+#
+# g1 = SparseGraph(13)  # 必须填入正确的结点个数。。。我真的觉得邻接矩阵不好用
+# BuildGraphFromFile(g1, 'testG1.txt')
+# print(g1)

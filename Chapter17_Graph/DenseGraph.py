@@ -32,3 +32,13 @@ class DenseGraph:
             return self.martix[v][w]
         else:
             raise Exception('Vertex not in the graph')
+
+    def __iter__(self):
+        return iter(range(self.m))
+
+    def __getitem__(self, item):
+        listP = []
+        for index,ele in enumerate(self.martix[item]):
+            if ele != 0:
+                listP.append(index)
+        return iter(listP)
