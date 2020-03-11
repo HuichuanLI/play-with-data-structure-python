@@ -32,7 +32,7 @@ class IndexHeap:
         self.count += 1
         self._shiftUp(self._data.get_size() - 1)
 
-    def extractMax(self):
+    def extractMin(self):
         if self.count < 0:
             raise ValueError("capacity should be >0")
         ele = self._data.get(self._index.get_first())
@@ -57,16 +57,16 @@ class IndexHeap:
         while self.leftChid(index) < self._index.get_size():
             max_index = self.leftChid(index)
             if self.rightChild(index) < self._index.get_size() and self._data.get(
-                    self._index.get(self.rightChild(index))) > self._data.get(self._index.get(self.leftChid(index))):
+                    self._index.get(self.rightChild(index))) < self._data.get(self._index.get(self.leftChid(index))):
                 max_index = self.rightChild(index)
-            if self._data.get(self._index.get(max_index)) > cur:
-                self._index.set(index, self._index.get(max_index))
-                self._reversed.set(self._index.get(max_index), index)
+            if self._data.get(self._index.get(max_index)) < cur:
+                self._index._data[max_index], self._index._data[index] = self._index._data[index], self._index._data[
+                    max_index]
+                self._reversed.set(self._index.get(max_index), max_index)
+                self._reversed.set(self._index.get(index), index)
                 index = max_index
             else:
                 break
-        self._index.set(index, cur_index)
-        self._reversed.set(self._index.get(index), cur_index)
 
     def _shiftUp(self, index):
         if index < 0:
@@ -75,25 +75,26 @@ class IndexHeap:
         cur_index = self._index.get(index)
         while (index - 1) // 2 >= 0:
             parent = (index - 1) // 2
-            if self._data.get(self._index.get(parent)) < cur:
-                self._index.set(index, self._index.get(parent))
+            if self._data.get(self._index.get(parent)) > cur:
+                self._index._data[parent], self._index._data[index] = self._index._data[index], self._index._data[
+                    parent]
                 self._reversed.set(self._index.get(index), index)
+                self._reversed.set(self._index.get(parent), parent)
                 index = (index - 1) // 2
             else:
                 break
-        self._index.set(index, cur_index)
-        self._reversed.set(self._index.get(index), index)
 
-    def extractMaxIndex(self):
+    def extractMinIndex(self):
         if self.count < 0:
             raise ValueError("capacity should be >0")
-        ele = self._index.get_size()
+        ele = self._index.get(0)
         self._index.set(0, self._index.get_last())
         self._reversed.set(self._index.get(0), 0)
-        self._reversed.set(self._index.get_last(), -1)
+        # self._reversed.set(self._index.get_last(), -1)
         self.count -= 1
 
         if self.count != 0:
+            self._reversed.set(self._index.get_last(), -1)
             self._index.remove_last()
         self._shiftDown(0)
         return ele
@@ -107,7 +108,14 @@ class IndexHeap:
 
     def change(self, i, item):
         assert self.contains(i)
-        self._data.set(i, item)
+        j = self._reversed.get(i)
+        if self._data.get(i) > item:
+            self._data.set(i, item)
+            self._shiftUp(j)
+        else:
+            self._data.set(i, item)
+            self._shiftDown(j)
+
         # 找到index中的i的位置 index[j] == i
         # 之后shiftUp(j),shiftDown(j)
         # o(n)
@@ -116,14 +124,12 @@ class IndexHeap:
         #         self._shiftDown(j)
         #         self._shiftUp(j)
         #         return
-        j = self._reversed.get(i)
-        self._shiftUp(j)
-        self._shiftDown(j)
 
     def __str__(self):
         return str(
-            ' heap_index: {}, heap_value:{},capacity: {},size:{}'.format(self._data, self._index, self.capacity,
-                                                                         self.count))
+            ' heap_value: {}, heap_index:{},heap_reversed:{},capacity: {},size:{}'.format(self._data, self._index,
+                                                                                          self._reversed, self.capacity,
+                                                                                          self.count))
 
 
 if __name__ == "__main__":
@@ -143,7 +149,7 @@ if __name__ == "__main__":
     for index, i in enumerate(alist):
         indexHeap.add(index, i)
 
-    indexHeap.change(1,10)
+    indexHeap.change(4, 10)
 
     for _ in range(len(alist)):
-        print(indexHeap.extractMax())
+        print(indexHeap.extractMin())

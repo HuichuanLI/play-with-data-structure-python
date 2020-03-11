@@ -21,6 +21,8 @@ class Edge:
         return self.weight < other.wt()
 
     def __eq__(self, other):
+        if other == -1:
+            return False
         return self.weight == other.wt()
 
     def __gt__(self, other):
