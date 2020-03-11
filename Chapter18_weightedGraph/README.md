@@ -30,3 +30,6 @@ OElogV
 ##### 不断的找最短的边,只要这些边不能构成环 -- UnionFind
 
 ![](../photo/46.png)
+
+
+![](../photo/47.png)

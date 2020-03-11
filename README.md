@@ -109,13 +109,15 @@ Please feel free to contact me if you have any questions with this repo:)
 | 17-2 Graph的实现 --邻接表|[python](./Chapter17_Graph/SparseGraph.py)|
 | 17-3 Graph的联通变量 --深度优先遍历 |[python](./Chapter17_Graph/DFS.py)|
 | 17-4 Graph的路径 --深度优先遍历 |[python](./Chapter17_Graph/DFS_PATH.py)|
-| 17-5 Graph的路径最短路径 --广度优先遍历 |[python](./Chapter17_Graph/BFS.py)|
+| 17-5 无权图Graph的路径最短路径 --广度优先遍历 |[python](./Chapter17_Graph/BFS.py)|
 | ** 第十八章 带权图  Weighted Graph   **  | python |
 | 18-1 Graph的实现 --邻接矩阵|[python](./Chapter18_weightedGraph/DenseGraph.py)|
 | 18-2 Graph的实现 --邻接表|[python](./Chapter18_weightedGraph/SparseGraph.py)|
 | 18-3 最小生成树lazyprim的实现 --lazyPrim|[python](./Chapter18_weightedGraph/lazyPrim.py)|
 | 18-4 最小生成树prim的实现 --Prim|[python](./Chapter18_weightedGraph/Prim.py)|
 | 18-5 最小生成树Kruskal的实现(UnionFind) --Kruskal|[python](./Chapter18_weightedGraph/Prim.py)|
+| ** 第十九章 带权图最短路径 Shortest Path in Weighted Graph    **  | python |
+| 19-1 Dijkstra算法 --基于索引堆实现|[python](./Chapter19_ShortestPath/Dijkstra.py)|
 
 
 
