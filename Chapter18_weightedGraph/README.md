@@ -19,7 +19,14 @@ Minimum Span Tree
 O(VlogV)
 
 #### Prim 算法 -- 索引堆
-![](../photo/44.png)
+![](../photo/45.png)
 
 
 OElogV
+
+
+### Krusk 算法
+
+##### 不断的找最短的边,只要这些边不能构成环 -- UnionFind
+
+![](../photo/46.png)

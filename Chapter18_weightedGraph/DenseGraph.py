@@ -12,7 +12,7 @@ class DenseGraph:
         for line in self.martix:
             for ele in line:
                 if isinstance(ele, Edge):
-                    print(str(ele.wt())+'   ', end='')
+                    print(str(ele.wt()) + '   ', end='')
                 else:
                     print('NULL   ', end='')
             print('')
@@ -47,6 +47,6 @@ class DenseGraph:
     def __getitem__(self, item):
         listP = []
         for index, ele in enumerate(self.martix[item]):
-            if ele != 0:
+            if not isinstance(ele, Edge) and ele != 0:
                 listP.append(index)
         return iter(listP)

@@ -115,6 +115,7 @@ Please feel free to contact me if you have any questions with this repo:)
 | 18-2 Graph的实现 --邻接表|[python](./Chapter18_weightedGraph/SparseGraph.py)|
 | 18-3 最小生成树lazyprim的实现 --lazyPrim|[python](./Chapter18_weightedGraph/lazyPrim.py)|
 | 18-4 最小生成树prim的实现 --Prim|[python](./Chapter18_weightedGraph/Prim.py)|
+| 18-5 最小生成树Kruskal的实现(UnionFind) --Kruskal|[python](./Chapter18_weightedGraph/Prim.py)|
 
 
 

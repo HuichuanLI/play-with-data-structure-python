@@ -28,7 +28,7 @@ class SparseGraph:
                 return
             self.graph[v].append(Edge(v, w, weight))
             if v != w and self.directed is False:
-                self.graph[w].append(Edge(v, w, weight))
+                self.graph[w].append(Edge(w, v, weight))
             self.m += 1
         else:
             raise Exception('Vertex not in the graph')
