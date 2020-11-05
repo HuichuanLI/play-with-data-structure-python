@@ -3,12 +3,14 @@ import math
 
 class NumArray:
     def __init__(self, data):
+        if len(data) == 0:
+            return
         self.data = data
         self.N = len(data)
 
         self.B = int(math.sqrt(len(data)))
-        self.Bn = self.N // self.B + 1
-        self.blocks = [0] * self.Bn
+        self.Bn = self.N // self.B
+        self.blocks = [0] * (self.Bn + 1)
 
         for i in range(self.N):
             self.blocks[i // self.B] += data[i]

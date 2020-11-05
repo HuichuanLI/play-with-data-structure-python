@@ -3,23 +3,17 @@ import math
 
 class NumArray:
     def __init__(self, data):
+        if len(data) == 0:
+            return
         self.data = data
         self.N = len(data)
 
         self.B = int(math.sqrt(len(data)))
         self.Bn = self.N // self.B + 1
-        self.blocks = [0] * self.Bn
 
+        self.blocks = [0] * (self.Bn + 1)
         for i in range(self.N):
             self.blocks[i // self.B] += data[i]
-
-    def update(self, i, val):
-        if i < 0 or i > self.N:
-            return
-        b = i // self.B
-        self.blocks[b] -= self.data[i]
-        self.blocks[b] += val
-        self.data[i] = val
 
     def sumRange(self, i, j):
         if i < 0 or i >= self.N or j < 0 or j >= self.N or i > j:
