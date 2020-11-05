@@ -119,6 +119,10 @@ Please feel free to contact me if you have any questions with this repo:)
 | ** 第十九章 带权图最短路径 Shortest Path in Weighted Graph    **  | python |
 | 19-1 Dijkstra算法 --基于索引堆实现|[python](./Chapter19_ShortestPath/Dijkstra.py)|
 | 19-2 Bellman-Ford算法 --基于索引堆实现|[python](./Chapter19_ShortestPath/BellmanFord.py)|
+| ** 第二十章 SQRT分解   **  | python |
+| 20-1 sqrt分解 --实现|[python](Chapter20_SQRT分解/sqrt.py)|
+
+
 
 
 
