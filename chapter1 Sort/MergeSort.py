@@ -14,7 +14,6 @@ def __mergeSort(alist, left, right):
     __mergeSort(alist, mid + 1, right)
     return __merge(alist, left, mid, right)
 
-
 def __merge(alist, left, mid, right):
     alist2 = []
     for i in range(left, right + 1):
@@ -36,8 +35,6 @@ def __merge(alist, left, mid, right):
             alist[k] = alist2[j - left]
             j += 1
     return alist
-
-
 def MergeSort(alist):
     alist = __mergeSort(alist, 0, len(alist) - 1)
     return alist

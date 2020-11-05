@@ -10,8 +10,8 @@ sys.setrecursionlimit(1000000)
 
 #
 def __quickSort(alist, left, right):
-    if right - left <= 15:
-        return insertionSortRange(alist, left, right)
+    if left > right:
+        return
     p = None
     p = __partion(alist, left, right)
     __quickSort(alist, left, p - 1)

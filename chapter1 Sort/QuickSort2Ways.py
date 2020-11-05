@@ -18,8 +18,6 @@ def __quickSort(alist, left, right):
     __quickSort(alist, left, p - 1)
     __quickSort(alist, p + 1, right)
     return alist
-
-
 # 对 arr[l,r] 进行partiton 操做
 def __partion(alist, left, right):
     index = random.randint(left, right)
@@ -39,8 +37,6 @@ def __partion(alist, left, right):
 
     alist[left], alist[j] = alist[j], alist[left]
     return j
-
-
 def quickSort(alist_1):
     alist_1 = __quickSort(alist_1, 0, len(alist_1) - 1)
     return alist_1
