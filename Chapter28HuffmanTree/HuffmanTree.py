@@ -1,7 +1,7 @@
 # -*- coding:utf-8 -*-
 # @Time : 2022/6/4 17:53
 # @Author : huichuan LI
-# @File : HuffmanTree.py
+# @File : BinomialHeap.py
 # @Software: PyCharm
 import collections
 
